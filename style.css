@@ -26,12 +26,17 @@ body {
 }
 .header {
   max-width: 100%;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to right,
     rgb(253, 60, 60),
     rgb(220, 20, 87),
     rgb(128, 0, 85)
-  );
+  ); */
+
+  background: linear-gradient(rgba(248, 248, 248, 0.5), rgba(0, 0, 0, 0.616)),
+    url(./images/pexels-photo-1363876.jpeg);
+  background-size: cover;
+
   border-radius: 20px 20px 0 0;
   -webkit-border-radius: 20px 20px 0 0;
   -moz-border-radius: 20px 20px 0 0;
@@ -128,16 +133,19 @@ body {
 }
 .header-title {
   font-size: 10vmin;
-   font-weight: bold;
-    /*color: #07060A;
-    letter-spacing: 2px;  */
-
-  letter-spacing: 0.1em;
-  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a,
-    0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222,
-    0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a,
-    0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212,
-    0 22px 30px rgba(0, 0, 0, 0.9);
+  font-weight: bold;
+  letter-spacing: 2px;
+  background: linear-gradient(to right, rgb(255, 0, 200), rgb(255, 68, 0), #07060A);
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* text-shadow: 4px 3px 0 #7a7a7a; */
+  text-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.5);
+  color: transparent;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
 .header-content h4 {
   font-size: 28px;
@@ -180,7 +188,7 @@ body {
     url(./images/tom.jpg);
   background-size: cover;
   min-height: 80vh;
-  padding: 80px 40px;
+  padding: 120px 40px;
   background-attachment: fixed;
 }
 @media (max-width: 768px) {
@@ -205,11 +213,11 @@ body {
   margin-bottom: 30px;
 
   letter-spacing: 0.1em;
-  text-shadow: 0 -1px 0 #fa3943, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a,
-    0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222,
-    0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a,
-    0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212,
-    0 22px 30px rgba(0, 0, 0, 0.9);
+  text-shadow: 0 -1px 0 #fa3943, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c,
+    0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424,
+    0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c,
+    0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414,
+    0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
 }
 .feature-container {
   display: grid;
@@ -230,9 +238,10 @@ body {
   display: grid;
   place-items: center;
 
-
-  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 .feature-item img {
   width: 150px;
@@ -275,8 +284,10 @@ box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15p
   margin: 0 auto;
   /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); */
 
-  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
 
   padding: 30px;
   flex-wrap: wrap;
@@ -288,6 +299,7 @@ box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15p
 }
 .cta-heading {
   font-size: 24px;
+  color: #ddd;
 }
 .btn {
   padding: 10px 20px;
